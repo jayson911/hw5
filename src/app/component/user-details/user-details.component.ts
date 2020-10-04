@@ -10,10 +10,13 @@ import {UserService} from '../../services/user.service';
 export class UserDetailsComponent implements OnInit {
 
   detailedUSer;
-  constructor(private router: Router) {
+  constructor(private router: Router,
+              private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.params.subscribe((params) =>{
+      this.detailedUSer = history.state.xxx;
+    });
     // console.log(this.router.getCurrentNavigation().extras.state);
     // this.detailedUSer = this.router.getCurrentNavigation().extras.state.xxx;
-    this.detailedUSer = history.state.xxx;
   }
 
   ngOnInit(): void {
