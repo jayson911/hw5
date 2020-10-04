@@ -20,7 +20,7 @@ import { UserDetailsComponent } from './component/user-details/user-details.comp
     HttpClientModule,
     RouterModule.forRoot([
       {path: 'all-users', component: AllUsersComponent, children: [
-          {path: 'details/:id', component: UserDetailsComponent}
+          {path: 'details', component: UserDetailsComponent}
         ]},
 
       ]

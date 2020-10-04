@@ -17,6 +17,8 @@ export class UserDetailsComponent implements OnInit {
     });
     // console.log(this.router.getCurrentNavigation().extras.state);
     // this.detailedUSer = this.router.getCurrentNavigation().extras.state.xxx;
+
+    this.activatedRoute.queryParams.subscribe(value => console.log(value));
   }
 
   ngOnInit(): void {
