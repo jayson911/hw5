@@ -9,7 +9,7 @@ import {User} from '../../models/user';
 export class UserComponent implements OnInit {
 
   @Input()
-  user: User[];
+  user: User;
 
   constructor() { }
 
